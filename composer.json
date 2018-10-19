@@ -1,0 +1,19 @@
+{
+    "name": "lyssal/seo",
+    "description": "A SEO library.",
+	"license" : "proprietary",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rémi Leclerc",
+            "homepage": "http://www.lyssal.com/"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Lyssal\\Seo\\": "src/"
+        }
+    }
+}
