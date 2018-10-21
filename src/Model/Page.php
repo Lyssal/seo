@@ -54,9 +54,19 @@ class Page
     protected $website;
 
     /**
+     * @var bool If the page is online
+     */
+    protected $online;
+
+    /**
      * @var string The title
      */
     protected $title;
+
+    /**
+     * @var string The slug
+     */
+    protected $slug;
 
     /**
      * @var string The description
@@ -128,6 +138,18 @@ class Page
         return $this;
     }
 
+    public function isOnline(): ?bool
+    {
+        return $this->online;
+    }
+
+    public function setOnline(bool $online): self
+    {
+        $this->online = $online;
+
+        return $this;
+    }
+
     public function getTitle(): ?string
     {
         return $this->title;
@@ -136,6 +158,18 @@ class Page
     public function setTitle(string $title): self
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(?string $slug): self
+    {
+        $this->slug = $slug;
 
         return $this;
     }
