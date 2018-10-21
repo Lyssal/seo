@@ -176,7 +176,7 @@ class Page
         return $this;
     }
 
-    public function getIndexed(): ?bool
+    public function isIndexed(): ?bool
     {
         return $this->indexed;
     }
@@ -188,7 +188,7 @@ class Page
         return $this;
     }
 
-    public function getFollowed(): ?bool
+    public function isFollowed(): ?bool
     {
         return $this->followed;
     }
