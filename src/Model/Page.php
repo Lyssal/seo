@@ -49,7 +49,7 @@ class Page
 
 
     /**
-     * @var \Lyssal\Seo\Model\Website
+     * @var \Lyssal\Seo\Model\Website The website
      */
     protected $website;
 

@@ -18,11 +18,6 @@ class Website
     protected $title;
 
     /**
-     * @var string The top-level domain
-     */
-    protected $domain;
-
-    /**
      * @var string The author
      */
     protected $author;
@@ -61,18 +56,6 @@ class Website
     public function setTitle(string $title): self
     {
         $this->title = $title;
-
-        return $this;
-    }
-
-    public function getDomain(): ?string
-    {
-        return $this->domain;
-    }
-
-    public function setDomain(string $domain): self
-    {
-        $this->domain = $domain;
 
         return $this;
     }
