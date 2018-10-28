@@ -116,6 +116,7 @@ class Page
 
     public function __construct()
     {
+        $this->online = true;
         $this->indexed = true;
         $this->followed = true;
     }
