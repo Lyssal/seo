@@ -18,6 +18,11 @@ class Website
     protected $title;
 
     /**
+     * @var \Lyssal\Seo\Model\Page The home page
+     */
+    protected $homePage;
+
+    /**
      * @var string The author
      */
     protected $author;
@@ -51,6 +56,18 @@ class Website
     public function setTitle(string $title): self
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    public function getHomePage(): ?Page
+    {
+        return $this->homePage;
+    }
+
+    public function setHomePage(?Page $homePage): self
+    {
+        $this->homePage = $homePage;
 
         return $this;
     }
