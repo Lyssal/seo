@@ -299,6 +299,16 @@ class Page
         return null !== $this->website && $this->website->getHomePage() === $this;
     }
 
+    /**
+     * Return if the page is accessible.
+     *
+     * @return bool If the page is accessible
+     */
+    public function isAccessible(): bool
+    {
+        return $this->online;
+    }
+
 
     /**
      * Get the available frequencies.
