@@ -290,6 +290,17 @@ class Page
 
 
     /**
+     * Return if the page is the home page.
+     *
+     * @return bool If the page is the home page
+     */
+    public function isHomePage()
+    {
+        return null !== $this->website && $this->website->getHomePage() === $this;
+    }
+
+
+    /**
      * Get the available frequencies.
      *
      * @return string[] The frequency labels
