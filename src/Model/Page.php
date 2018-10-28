@@ -121,11 +121,6 @@ class Page
     }
 
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
-
     public function getWebsite(): ?Website
     {
         return $this->website;
