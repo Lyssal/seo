@@ -23,6 +23,13 @@ trait PageTrait
         return $this->page;
     }
 
+    /**
+     * Set page.
+     *
+     * @param \Lyssal\Seo\Model\Page|null $page The page
+     *
+     * @return object The instance
+     */
     public function setPage(?Page $page): self
     {
         $this->page = $page;
