@@ -30,6 +30,10 @@ class Host
 
     public function setDomain(string $domain): self
     {
+        if ('/' === substr($domain, -1)) {
+            $domain = substr($domain, 0, -1);
+        }
+
         $this->domain = $domain;
 
         return $this;
