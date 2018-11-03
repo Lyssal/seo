@@ -79,6 +79,11 @@ class Page
     protected $locale;
 
     /**
+     * @var \DateTime The creation date
+     */
+    protected $createdAt;
+
+    /**
      * @var \DateTime The last modification date
      */
     protected $updatedAt;
@@ -190,6 +195,18 @@ class Page
     public function setLocale(?string $locale): self
     {
         $this->locale = $locale;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(?\DateTimeInterface $createdAt): self
+    {
+        $this->createdAt = $createdAt;
 
         return $this;
     }
