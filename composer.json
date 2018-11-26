@@ -1,7 +1,7 @@
 {
     "name": "lyssal/seo",
     "description": "A SEO library.",
-	"license" : "proprietary",
+    "license" : "MIT",
     "type": "library",
     "authors": [
         {
