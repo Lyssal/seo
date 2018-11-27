@@ -48,11 +48,22 @@ class Website
     protected $replyTo;
 
 
+    /**
+     * Get title.
+     *
+     * @return null|string
+     */
     public function getTitle(): ?string
     {
         return $this->title;
     }
 
+    /**
+     * Set title.
+     *
+     * @param string $title
+     * @return Website
+     */
     public function setTitle(string $title): self
     {
         $this->title = $title;
