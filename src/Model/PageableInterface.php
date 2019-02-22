@@ -17,7 +17,7 @@ interface PageableInterface
      *
      * @return \Lyssal\Seo\Model\Page The page
      */
-    public function getPage();
+    public function getPage(): ?Page;
 
     /**
      * Get the pattern to use for generate the slug.
